@@ -1,0 +1,11 @@
+﻿CACHE MANIFEST
+/Content/site.css
+/Scripts/jquery-1.10.2.js
+/Content/images/big-picture.bmp
+/Content/offline.html
+
+NETWORK:
+*
+
+FALLBACK:
+/Content/offline.html

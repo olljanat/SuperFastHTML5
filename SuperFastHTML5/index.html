@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html manifest="/Content/superfastHTML5.appcache">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="prefetch" href="/Content/images/big-picture.jpg">
+    <title>Super Fast HTML5 - My ASP.NET Application</title>
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+	<script src="/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <link href="/Content/site.css" rel="stylesheet" />
+	<script>
+		function showAbout() {
+		  $(".home-content").hide();
+		  $(".about-content").show();
+		  $(".contact-content").hide();
+		}
+		
+		function showHome() {
+		  $(".home-content").show();
+		  $(".about-content").hide();
+		  $(".contact-content").hide();
+		}
+		
+		function showContact() {
+		  $(".home-content").hide();
+		  $(".about-content").hide();
+		  $(".contact-content").show();
+		}
+	</script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" onClick="showHome();" id="home-link">Home</a></li>
+                    <li><a href="#" onClick="showAbout();" id="about-link">About</a></li>
+                    <li><a href="#" onClick="showContact();" id="contact-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container home-content">
+		<div class="jumbotron">
+			<h1>Super Fast HTML5</h1>
+			<p class="lead">This is example/test application which can used to test how to use HTML5 technology to create fast web sites.</p>
+		</div>
+	</div>
+
+    <div class="container about-content">
+		<h2>About.</h2>
+		<h3>Your application description page.</h3>
+
+		<p>Use this area to provide additional information.</p>
+    </div>
+	
+    <div class="container contact-content">
+		<h2>Contact.</h2>
+		<h3>Your contact page.</h3>
+		<img src="Content/images/big-picture.bmp" />
+    </div>
+	
+	<div class="container footer-content">
+        <hr />
+        <footer>
+            <p>&copy; 2017 - Super Fast HTML5</p>
+        </footer>
+    </div>
+	
+    <script src="Scripts/jquery-1.10.2.js"></script>
+
+    <script src="Scripts/bootstrap.js"></script>
+	<script src="Scripts/respond.js"></script>
+
+    
+</body>
+</html>
