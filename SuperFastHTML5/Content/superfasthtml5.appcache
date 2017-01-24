@@ -1,0 +1,12 @@
+﻿CACHE MANIFEST
+/SuperFastHTML5/Content/site.css
+/SuperFastHTML5/Content/bootstrap.min.css
+/SuperFastHTML5/Scripts/jquery-1.10.2.min.js
+/SuperFastHTML5/Content/images/big-picture.bmp
+/SuperFastHTML5/Content/offline.html
+
+NETWORK:
+*
+
+FALLBACK:
+/SuperFastHTML5/Content/offline.html
